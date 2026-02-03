@@ -4,7 +4,6 @@ import * as request from 'supertest';
 import { App } from 'supertest/types';
 import { AppModule } from './../src/app.module';
 import { mockTasks } from './mockTasks';
-import { Server } from 'http';
 
 function expectTaskShape(body: unknown) {
   expect(body).toMatchObject({
